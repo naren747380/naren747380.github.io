@@ -3,39 +3,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naren's Personal Website</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 25px;
+            line-height: 1.45;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .photo {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .photo-caption {
+            max-width: 300px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .meme {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 650px) {
+            .intro {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Srinaren (Naren) Ayinala</h1>
+    <div class="intro">
+        <div>
+            <img src="childhood.png"
+                 alt="Me as a kid"
+                 class="photo">
 
-    <h2>About Me</h2>
+            <p class="photo-caption">
+                Unfortunately, I look nothing like this
+                anymore, nor am I anywhere near as cute :(((
+            </p>
+        </div>
 
-    <p>
-        Hi! I'm Naren, originally from Hyderabad, India.
-        I'm currently an undergraduate student studying
-        Computer Science at the University of Maryland,
-        College Park, with minors in Mathematics and
-        Quantum Science and Engineering.
-    </p>
+        <div>
+            <h1>Srinaren (Naren) Ayinala</h1>
 
-    <p>
-        I enjoy programming, contributing to open-source
-        projects, and working on things that can make a
-        positive difference in people's lives. I'm also
-        an avid Wikipedia editor and have made over
-        20,000 edits to articles on the platform.
-    </p>
+            <h2>About Me</h2>
 
-    <p>
-        Outside of computer science, I'm a huge comic
-        book fan, particularly of DC Comics. I also
-        love aviation and enjoy following developments
-        in the airline industry.
-    </p>
+            <p>
+                Hi! I'm Naren, originally from Hyderabad,
+                India. I'm currently an undergraduate
+                Computer Science student at the University
+                of Maryland, College Park, with minors in
+                Mathematics and Quantum Science and
+                Engineering.
+            </p>
+
+            <p>
+                I love programming, contributing to
+                open-source projects, and building things
+                that I find interesting. I'm also a huge
+                Wikipedia enthusiast and have made over
+                20,000 edits to articles on the platform!
+            </p>
+
+            <p>
+                Outside of computer science, I'm a massive
+                comic book fan, especially DC Comics.
+                I also absolutely love aviation and enjoy
+                keeping up with everything happening in
+                the airline industry!
+            </p>
+        </div>
+    </div>
 
     <hr>
 
@@ -45,9 +99,9 @@
 
     <p>
         Below are notes I've prepared while taking
-        various courses at UMD. I've tried to make
+        various classes at UMD. I've tried to make
         them as comprehensive and accessible as possible
-        for other students.
+        for anyone who might find them useful!
     </p>
 
     <ul>
@@ -55,26 +109,28 @@
             <a href="cmsc131.html">
                 CMSC131 (Object-Oriented Programming I)
             </a>
-            - Fall 2025, Professor Pedram Sadeghian.
+            - An introduction to programming in Java,
+            covering programming fundamentals and the
+            basics of object-oriented programming.
         </li>
 
         <li>
             <a href="cmsc132.html">
                 CMSC132 (Object-Oriented Programming II)
             </a>
-            - Notes on Java, object-oriented programming,
-            and data structures.
+            - A deeper dive into object-oriented
+            programming, along with a proper introduction
+            to data structures and algorithms.
         </li>
     </ul>
 
-    <h3>Teaching Assistant Resources</h3>
+    <h3>Resources I've Made as a Teaching Assistant</h3>
 
     <p>
-        I've also created practice examinations and
-        other resources while working as a teaching
-        assistant. These materials are intended to
-        help students review concepts and prepare
-        for their examinations.
+        I've also put together some practice exams
+        and other resources while working as a teaching
+        assistant. Hopefully, these will help you
+        prepare for your exams!
     </p>
 
     <ul>
@@ -93,29 +149,68 @@
 
     <ul>
         <li>
-            <strong>RythuSneha</strong>
+            <strong>
+                <a href="https://3am.engineer/">
+                    3AM - Agentic SRE
+                </a>
+            </strong>
+
             <p>
-                RythuSneha is an agricultural advisory
-                project I founded to help farmers access
-                useful information and resources through
-                technology. I developed the platform
-                using React and Java, with the goal of
-                making agricultural information more
-                accessible to farmers in India.
+                A super, super cool project that I had
+                the opportunity to work on as an AI
+                Engineering Intern! I worked on a variety
+                of things here, including developing a
+                Redis-focused AI agent to observe,
+                diagnose, mitigate, and resolve anomalies
+                in production systems using a combination
+                of deterministic and probabilistic methods.
+            </p>
+
+            <p>
+                I also got to work with large language
+                models, including fine-tuning and
+                retrieval-augmented generation (RAG),
+                to help build more intelligent and
+                reliable systems.
+            </p>
+
+            <p>
+                This was genuinely one of the coolest
+                projects I've worked on, and I learned
+                a ton along the way. I'm really proud
+                of what we built, so do check it out
+                when you get the chance!
             </p>
         </li>
 
         <li>
-            <strong>3AM Agentic SRE</strong>
+            <strong>RythuSneha</strong>
+
             <p>
-                During my AI engineering internship at
-                TechMojo Solutions, I worked on 3AM,
-                an agentic AI system for Site Reliability
-                Engineering. My work involved developing
-                AI-powered tools for diagnosing and
-                resolving Redis caching issues, using
-                large language models to improve the
-                reliability of software systems.
+                This is a project that's especially
+                close to my heart. I originally developed
+                RythuSneha for my grandparents, with
+                the goal of helping bridge the digital
+                divide and making useful agricultural
+                information more accessible to farmers
+                in India.
+            </p>
+
+            <p>
+                What started as something personal
+                eventually grew into a platform that
+                reached over 24,000 views and downloads!
+                One of the proudest moments for me was
+                having my work recognized by the
+                Telangana State Government :))
+            </p>
+
+            <p>
+                This project really showed me how
+                technology can be used to solve
+                problems that affect people around us,
+                and it remains one of my favorite
+                things I've built.
             </p>
         </li>
 
@@ -125,14 +220,13 @@
                     Jupiterp
                 </a>
             </strong>
+
             <p>
-                Jupiterp is an open-source project
-                associated with the University of
-                Maryland. I've been contributing to
-                the project by working on improvements
-                and bug fixes, gaining experience
-                collaborating on a shared codebase
-                and using Git and GitHub.
+                I recently joined this amazing
+                open-source team at UMD! I'm really
+                excited to work with everyone and
+                am looking forward to contributing
+                a lot to the project!
             </p>
         </li>
     </ul>
@@ -141,10 +235,16 @@
 
     <p>
         If you notice any mistakes or inaccuracies
-        in my notes or resources, please contact me
-        at ayinala [AT] gmail [DOT] com, and I'll
-        do my best to correct them as soon as possible!
+        in my notes or resources, please let me
+        know at ayinala [AT] gmail [DOT] com,
+        and I'll rectify them as soon as possible!
     </p>
+
+    <hr>
+
+    <img src="bus-pants.webp"
+         alt="If a bus wore pants, how would it wear them?"
+         class="meme">
 
 </body>
 </html>
