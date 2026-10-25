@@ -4,100 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMSC131: Notes</title>
+    <title>Naren's Personal Website</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 25px;
+            line-height: 1.45;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .photo {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .photo-caption {
+            max-width: 300px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .meme {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 650px) {
+            .intro {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>CMSC131: Object-Oriented Programming I</h1>
+    <div class="intro">
+        <div>
+            <img src="childhood.png"
+                 alt="Me as a kid"
+                 class="photo">
 
-    <h2>Course Notes</h2>
+            <p class="photo-caption">
+                Unfortunately, I look nothing like this
+                anymore, nor am I anywhere near as cute :(((
+            </p>
+        </div>
+
+        <div>
+            <h1>Srinaren (Naren) Ayinala</h1>
+
+            <h2>About Me</h2>
+
+            <p>
+                Hi! I'm Naren, originally from Hyderabad,
+                India. I'm currently an undergraduate
+                Computer Science student at the University
+                of Maryland, College Park, with minors in
+                Mathematics and Quantum Science and
+                Engineering.
+            </p>
+
+            <p>
+                I love programming, contributing to
+                open-source projects, and building things
+                that I find interesting. I'm also a huge
+                Wikipedia enthusiast and have made over
+                20,000 edits to articles on the platform!
+            </p>
+
+            <p>
+                Outside of computer science, I'm a massive
+                comic book fan, especially DC Comics.
+                I also absolutely love aviation and enjoy
+                keeping up with everything happening in
+                the airline industry!
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>University of Maryland Course Notes</h2>
+
+    <h3>Notes from Classes I've Taken</h3>
 
     <p>
-        These notes were written by me while taking CMSC131
-        at the University of Maryland in Fall 2025 under
-        Professor Pedram Sadeghian. Professor Sadeghian
-        provided course notes and other instructional
-        materials, which I used as references when
-        preparing and expanding my own notes.
+        Below are notes I've prepared while taking
+        various classes at UMD. I've tried to make
+        them as comprehensive and accessible as possible
+        for anyone who might find them useful!
     </p>
 
-    <p>
-        I have tried to make these notes as detailed and
-        accessible as possible, including explanations,
-        examples, and additional information to help
-        students understand the concepts covered in class.
-        Some documents may cover certain topics in greater
-        depth than what is required for a particular
-        section of CMSC131.
-    </p>
+    <ul>
+        <li>
+            <a href="cmsc131.html">
+                CMSC131 (Object-Oriented Programming I)
+            </a>
+            - An introduction to programming in Java,
+            covering programming fundamentals and the
+            basics of object-oriented programming.
+        </li>
+
+        <li>
+            <a href="cmsc132.html">
+                CMSC132 (Object-Oriented Programming II)
+            </a>
+            - A deeper dive into object-oriented
+            programming, along with a proper introduction
+            to data structures and algorithms.
+        </li>
+    </ul>
+
+    <h3>Resources I've Made as a Teaching Assistant</h3>
 
     <p>
-        Since the topics covered and the level of detail
-        can vary depending on the professor teaching the
-        course, I recommend checking your course syllabus
-        and consulting your professor to determine exactly
-        what you are expected to know. You are, of course,
-        welcome to explore any additional material
-        included in these notes.
+        I've also put together some practice exams
+        and other resources while working as a teaching
+        assistant. Hopefully, these will help you
+        prepare for your exams!
     </p>
 
+    <ul>
+        <li>
+            <a href="notes/TA/CMSC131_Practice_Exam_1_Fall_2026.pdf">
+                CMSC131 Practice Exam 1 - Fall 2026
+            </a>
+            - Professor Pedram Sadeghian,
+            Sections 03XX-04XX.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Projects and Experience</h2>
+
+    <ul>
+        <li>
+            <strong>
+                <a href="https://3am.engineer/">
+                    3AM - Agentic SRE
+                </a>
+            </strong>
+
+            <p>
+                A super, super cool project that I had
+                the opportunity to work on as an AI
+                Engineering Intern! I worked on a variety
+                of things here, including developing a
+                Redis-focused AI agent to observe,
+                diagnose, mitigate, and resolve anomalies
+                in production systems using a combination
+                of deterministic and probabilistic methods.
+            </p>
+
+            <p>
+                I also got to work with large language
+                models, including fine-tuning and
+                retrieval-augmented generation (RAG),
+                to help build more intelligent and
+                reliable systems.
+            </p>
+
+            <p>
+                This was genuinely one of the coolest
+                projects I've worked on, and I learned
+                a ton along the way. I'm really proud
+                of what we built, so do check it out
+                when you get the chance!
+            </p>
+        </li>
+
+        <li>
+            <strong>RythuSneha</strong>
+
+            <p>
+                This is a project that's especially
+                close to my heart. I originally developed
+                RythuSneha for my grandparents, with
+                the goal of helping bridge the digital
+                divide and making useful agricultural
+                information more accessible to farmers
+                in India.
+            </p>
+
+            <p>
+                What started as something personal
+                eventually grew into a platform that
+                reached over 24,000 views and downloads!
+                One of the proudest moments for me was
+                having my work recognized by the
+                Telangana State Government :))
+            </p>
+
+            <p>
+                This project really showed me how
+                technology can be used to solve
+                problems that affect people around us,
+                and it remains one of my favorite
+                things I've built.
+            </p>
+        </li>
+
+        <li>
+            <strong>
+                <a href="https://github.com/Jupiterp-UMD/Jupiterp">
+                    Jupiterp
+                </a>
+            </strong>
+
+            <p>
+                I recently joined this amazing
+                open-source team at UMD! I'm really
+                excited to work with everyone and
+                am looking forward to contributing
+                a lot to the project!
+            </p>
+        </li>
+    </ul>
+
+    <hr>
+
     <p>
-        Each document includes a table of contents on its
-        first page. You can click on any chapter below to
-        open the corresponding PDF and see the topics
-        covered in that document. If you notice any mistakes
-        or inaccuracies in the notes, please let me know
-        at ayinala [AT] gmail [DOT] com, and I'll do my
-        best to correct them as soon as possible!
+        If you notice any mistakes or inaccuracies
+        in my notes or resources, please let me
+        know at ayinala [AT] gmail [DOT] com,
+        and I'll rectify them as soon as possible!
     </p>
 
     <hr>
 
-    <h2>Chapters</h2>
-
-<h2>Chapters</h2>
-
-<ol>
-    <li>
-        <a href="notes/CMSC131/Java_Foundations___Computer_Systems.pdf">
-            Java Foundations &amp; Computer Systems
-        </a>
-    </li>
-
-    <li>
-        <a href="notes/CMSC131/Strings__Input___Expressions.pdf">
-            Strings, Input &amp; Expressions
-        </a>
-    </li>
-
-    <li>
-        <a href="notes/CMSC131/Conditionals__Boolean_Logic___Switch.pdf">
-            Conditionals, Boolean Logic &amp; Switch
-        </a>
-    </li>
-
-    <li>
-        <a href="notes/CMSC131/Loops__Random_Numbers___Patterns.pdf">
-            Loops, Random Numbers &amp; Patterns
-        </a>
-    </li>
-
-    <li>
-        <a href="notes/CMSC131/Methods__Scope___Parameter_Passing.pdf">
-            Methods, Scope &amp; Parameter Passing
-        </a>
-    </li>
-</ol>
-
-    <ol>
-
-    </ol>
-
-    <hr>
-
-    <p>
-        <a href="index.html">Back to Homepage</a>
-    </p>
+    <img src="bus-pants.webp"
+         alt="If a bus wore pants, how would it wear them?"
+         class="meme">
 
 </body>
 </html>
