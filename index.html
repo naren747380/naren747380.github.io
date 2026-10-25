@@ -19,14 +19,20 @@
             gap: 30px;
         }
 
-        .photo {
+        .photo-container {
             width: 300px;
             max-width: 100%;
+            flex-shrink: 0;
+        }
+
+        .photo {
+            width: 100%;
             height: auto;
+            display: block;
         }
 
         .photo-caption {
-            max-width: 300px;
+            width: 100%;
             font-size: 14px;
             text-align: center;
         }
@@ -53,16 +59,18 @@
 
 <body>
 
+
     <div class="intro">
 
-        <div>
+        <div class="photo-container">
             <img src="photosAndFunnyStuff/SRN_3739.jpg"
                  alt="Me as a kid"
                  class="photo">
 
             <p class="photo-caption">
                 Unfortunately, I look nothing like this
-                anymore, nor am I anywhere near as cute :(((
+                anymore, nor am I anywhere near as cute
+                <span style="white-space: nowrap;">:(((</span>
             </p>
         </div>
 
@@ -105,57 +113,6 @@
     </div>
 
     <hr>
-
-
-    <h2>Research and Teaching Experience</h2>
-
-    <ul>
-        <li>
-            <strong>Research Assistant - Purcell Lab</strong>
-            (January 2026 - July 2026)
-
-            <p>
-                I worked as a research assistant at the
-                Purcell Lab at UMD! My work involved
-                analyzing audio recordings from fMRI
-                reading experiments using Audacity,
-                identifying reaction times and
-                classifying response errors to help
-                improve the accuracy of behavioral
-                datasets.
-            </p>
-
-            <p>
-                It was a really interesting opportunity
-                to work at the intersection of computer
-                science, language, and cognitive
-                neuroscience!
-            </p>
-        </li>
-
-        <li>
-            <strong>
-                <a href="https://www.cs.umd.edu/class/fall2026/cmsc131-03XX-04XX/">
-                    Teaching Assistant - CMSC131
-                </a>
-            </strong>
-            (Fall 2026)
-
-            <p>
-                I'm currently a teaching assistant
-                for CMSC131 (Object-Oriented
-                Programming I) at UMD, working with
-                Professor Pedram Sadeghian.
-                I help students understand introductory
-                programming concepts in Java and
-                prepare additional practice materials
-                to help them succeed in the course!
-            </p>
-        </li>
-    </ul>
-
-    <hr>
-
 
 
     <h2>University of Maryland Course Notes</h2>
@@ -210,7 +167,6 @@
 
     <hr>
 
-    <!-- If you are reading this for some reason helloooooooo:). Hope you're having a good day :D. -->
 
     <h2>Projects and Experience</h2>
 
@@ -306,6 +262,87 @@
 
     <hr>
 
+
+    <h2>Research and Teaching Experience</h2>
+
+    <ul>
+        <li>
+            <strong>Research Assistant - Purcell Lab</strong>
+            (January 2026 - July 2026)
+
+            <p>
+                I worked as a research assistant at the
+                Purcell Lab at UMD! My work involved
+                analyzing audio recordings from fMRI
+                reading experiments using Audacity,
+                identifying reaction times and
+                classifying response errors to help
+                improve the accuracy of behavioral
+                datasets.
+            </p>
+
+            <p>
+                It was a really interesting opportunity
+                to work at the intersection of computer
+                science, language, and cognitive
+                neuroscience!
+            </p>
+        </li>
+
+        <li>
+            <strong>
+                FIRE - First-Year Innovation &amp;
+                Research Experience
+            </strong>
+
+            <p>
+                I'm part of UMD's FIRE research program,
+                where I've been working on atmospheric
+                science and climate modeling research.
+                Our research focuses on understanding
+                how decreasing Arctic sea ice extent
+                affects cold air outbreaks in North
+                America.
+            </p>
+
+            <p>
+                I've worked with the Weather Research
+                and Forecasting (WRF-ARW) model,
+                atmospheric reanalysis datasets such
+                as ERA5, and NCAR's Derecho
+                supercomputer to simulate and analyze
+                weather systems. It's been a really
+                interesting opportunity to apply
+                computational methods to climate
+                and atmospheric science!
+            </p>
+        </li>
+
+        <li>
+            <strong>
+                <a href="https://www.cs.umd.edu/class/fall2026/cmsc131-03XX-04XX/">
+                    Teaching Assistant - CMSC131
+                </a>
+            </strong>
+            (Fall 2026)
+
+            <p>
+                I'm currently a teaching assistant
+                for CMSC131 (Object-Oriented
+                Programming I) at UMD, working with
+                Professor Pedram Sadeghian.
+                I help students understand introductory
+                programming concepts in Java and
+                prepare additional practice materials
+                to help them succeed in the course!
+            </p>
+        </li>
+    </ul>
+
+    <hr>
+
+
+
     <p>
         If you notice any mistakes or inaccuracies
         in my notes or resources, please let me
@@ -315,7 +352,7 @@
 
     <hr>
 
-    <!-- VERY IMPORTANT BUS QUESTION -->
+  
 
     <img
         src="photosAndFunnyStuff/which-one-of-you-clowns-bought-a-bart-ad-v0-8742t9ygf3cf1.webp"
